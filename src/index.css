@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+* {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+*::-webkit-scrollbar {
+  display: none;
+}
+
+.shiny-text {
+  background: linear-gradient(90deg, #fff, #ffc4e3 90%, #d396ff 90%, #ffc8a1 90%, #fff3ae, #fff);
+  background-size: 200% 100%;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  position: relative;
+  display: inline-block;
+  animation: shine 5s linear infinite;
+}
+
+@keyframes shine {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}
+
+.shiny-btn {
+  position: relative;
+  overflow: hidden;
+}
+
+.shiny-btn::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -75%; 
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(
+    120deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.5) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: skewX(-20deg);
+  animation: shinebtn 2s infinite;
+}
+
+@keyframes shinebtn {
+  0% {
+    left: -75%;
+  }
+  100% {
+    left: 125%;
+  }
+}
