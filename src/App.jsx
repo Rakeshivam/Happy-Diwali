@@ -67,6 +67,7 @@ const App = () => {
               <p className="text-yellow-200 text-sm sm:text-lg text-center">
                 "May the festival of lights bring countless moments of joy and
                 happiness to your life!"<br />
+                <a href="https://www.instagram.com/rakeshkushwaha.in/#">— Rakesh Kushwaha</a>
               </p>
             </div>
 
