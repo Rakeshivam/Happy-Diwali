@@ -7,7 +7,7 @@ import CountDown from "./Components/CountDown";
 import { Toaster } from "react-hot-toast";
 
 const App = () => {
-  const deepavaliDate = new Date("2025-10-20T00:00:00");
+  const deepavaliDate = new Date("2026-11-08T00:00:00");
 
   const [searchParams] = useSearchParams();
   const name = searchParams.get("name") || "";
